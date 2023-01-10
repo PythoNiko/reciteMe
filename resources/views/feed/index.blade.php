@@ -27,6 +27,7 @@
                 <div>
                     <div class="container bg-white shadow">
                         <div class="row">
+                            {{-- Output some basic data from db--}}
                             <table class="table table-strped">
                                 <thead class="thead-dark">
                                 <tr>
