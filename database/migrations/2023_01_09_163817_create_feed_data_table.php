@@ -20,7 +20,8 @@ class CreateFeedDataTable extends Migration
             $table->string('guid');
             $table->text('description'); // unsure if there is a limit on this field so will use text for now...
             $table->dateTime('pub_date');
-            $table->json('categories'); // store as json for now, will revisit how to capture categories later...
+            $table->json('categories')->nullable(); // store as json for now, will revisit how to capture categories later...
+            $table->timestamps();
         });
     }
 

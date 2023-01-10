@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FeedController@index')->name('home');
+Route::post('/getRssData', 'FeedController@feedReader')->name('feedReader');
